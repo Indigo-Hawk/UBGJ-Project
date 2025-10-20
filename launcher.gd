@@ -20,6 +20,7 @@ func spawnHead() -> void:
 	newHead.global_position = global_position
 	newHead.linear_velocity = LaunchStrength * global_position.direction_to(get_global_mouse_position())
 	get_tree().root.add_child(newHead)
+	Globals.head = newHead
 	
 
 func _updateLine() -> void:

@@ -81,10 +81,10 @@ isStart = true
 position = Vector2(1014, -131)
 
 [node name="Door" parent="." instance=ExtResource("3_ppyta")]
-position = Vector2(1547, 366)
+position = Vector2(1548, 704)
 
 [node name="Door2" parent="." instance=ExtResource("3_ppyta")]
-position = Vector2(1590, 368)
+position = Vector2(1591, 706)
 
 [node name="PressurePad" parent="." instance=ExtResource("4_ykrsh")]
 position = Vector2(1181, -73)
