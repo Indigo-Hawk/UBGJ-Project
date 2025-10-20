@@ -18,6 +18,7 @@ process_mode = 4
 script = ExtResource("1_4emaf")
 
 [node name="MousePos" type="MeshInstance2D" parent="."]
+visible = false
 mesh = SubResource("SphereMesh_4emaf")
 
 [node name="Line2D" type="Line2D" parent="."]
@@ -25,4 +26,5 @@ gradient = SubResource("Gradient_4emaf")
 joint_mode = 1
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
 mesh = SubResource("BoxMesh_4emaf")
