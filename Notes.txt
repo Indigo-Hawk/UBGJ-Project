@@ -1,0 +1,15 @@
+
+TODO:
+	
+x	Head 
+x	Body(base)
+x	Head Launcher
+x	Bodys(components)
+x	Start
+x	End
+x	Doors
+x	PressurePads
+x	Switch
+x	Better KeyMapping
+	Portals
+	

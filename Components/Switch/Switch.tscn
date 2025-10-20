@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://da3bscst3fwvx"]
+
+[ext_resource type="Script" uid="uid://c4lsby04488ku" path="res://Components/Switch/switch.gd" id="1_pbq1u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r2g8h"]
+radius = 25.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_xqcgd"]
+size = Vector3(10, 50, 1)
+
+[node name="Switch" type="StaticBody2D"]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource("1_pbq1u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r2g8h")
+
+[node name="Node2D" type="Node2D" parent="."]
+rotation = 0.785398
+scale = Vector2(1, 1)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D"]
+position = Vector2(0, -20)
+mesh = SubResource("BoxMesh_xqcgd")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -5.0
+offset_top = -80.0
+offset_right = 35.0
+offset_bottom = -57.0
+text = "E"

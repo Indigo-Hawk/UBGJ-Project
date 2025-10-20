@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3n0ldbv7yigt"]
+
+[ext_resource type="Script" uid="uid://cq1arp2nk8l" path="res://Mods/arms.gd" id="1_t26x8"]
+
+[node name="ArmsMod" type="Node"]
+script = ExtResource("1_t26x8")
+metadata/_custom_type_script = "uid://rsqjcj6mom8j"

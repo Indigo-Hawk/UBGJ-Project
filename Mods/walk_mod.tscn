@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtr4rxluochx1"]
+
+[ext_resource type="Script" uid="uid://8aani5bhf2f6" path="res://Mods/walk_mod.gd" id="1_edosk"]
+
+[node name="WalkMod" type="Node"]
+script = ExtResource("1_edosk")

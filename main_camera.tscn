@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr0xdlvoi8kvu"]
+
+[ext_resource type="Script" uid="uid://dbe8w2gnaucjh" path="res://main_camera.gd" id="1_vbit3"]
+[ext_resource type="Texture2D" uid="uid://dbv2eduwv3ple" path="res://Art/border.png" id="2_x31i4"]
+[ext_resource type="PackedScene" uid="uid://btpnckey5hghk" path="res://Components/Grid/grid.tscn" id="3_oeyyd"]
+
+[node name="MainCamera" type="Camera2D"]
+zoom = Vector2(0.8, 0.8)
+script = ExtResource("1_vbit3")
+
+[node name="Border" type="Sprite2D" parent="."]
+z_index = 10
+texture = ExtResource("2_x31i4")
+
+[node name="Grid" parent="." instance=ExtResource("3_oeyyd")]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://v3bvdifcwuf"]
+
+[ext_resource type="Script" uid="uid://blgvfe203jmcd" path="res://Mods/hover_mod.gd" id="1_skerr"]
+
+[node name="HoverMod" type="Node"]
+script = ExtResource("1_skerr")
+metadata/_custom_type_script = "uid://rsqjcj6mom8j"

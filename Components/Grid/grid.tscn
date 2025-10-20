@@ -1,0 +1,150 @@
+[gd_scene load_steps=5 format=3 uid="uid://btpnckey5hghk"]
+
+[ext_resource type="Texture2D" uid="uid://ch6yl5b2emgbk" path="res://Art/grid_bg.png" id="1_uycmt"]
+
+[sub_resource type="Animation" id="Animation_uycmt"]
+resource_name = "Move"
+length = 15.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(724, 700)]
+}
+
+[sub_resource type="Animation" id="Animation_ux8q2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8a1dg"]
+_data = {
+&"Move": SubResource("Animation_uycmt"),
+&"RESET": SubResource("Animation_ux8q2")
+}
+
+[node name="Grid" type="Node2D"]
+modulate = Color(0.464979, 0.594818, 0.631442, 1)
+z_index = -10
+
+[node name="GridBg" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(662, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 635)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(662, 635)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1323, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-661, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg7" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1323, 635)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg8" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-661, 635)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg9" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -1271)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg10" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(662, -1271)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg11" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -636)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg12" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(662, -636)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg13" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1323, -1271)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg14" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-661, -1271)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg15" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1323, -636)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="GridBg16" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-661, -636)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uycmt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_8a1dg")
+}
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Node2D" type="Node2D" parent="Node"]
+position = Vector2(-2, 22)

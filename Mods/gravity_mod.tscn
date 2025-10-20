@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr3e6stx2np8w"]
+
+[ext_resource type="Script" uid="uid://do2fwhsd7de04" path="res://Mods/gravity_mod.gd" id="1_tappp"]
+
+[node name="GravityMod" type="Node"]
+script = ExtResource("1_tappp")
+metadata/_custom_type_script = "uid://rsqjcj6mom8j"

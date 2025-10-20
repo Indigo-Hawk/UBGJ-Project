@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://djdopxl8rdnka"]
+
+[ext_resource type="Script" uid="uid://c8mbttq5ecbwr" path="res://Components/Portal/portal.gd" id="1_bx4x7"]
+[ext_resource type="Texture2D" uid="uid://cem7tdenjrfmw" path="res://Art/ace78947-9a0f-4ac5-a603-b43e42a1da853b017943-5ef1-4a45-b563-de7919e8ac7d.jpg" id="2_pd6tl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pd6tl"]
+radius = 50.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_gp4mo"]
+size = Vector3(100, 100, 1)
+
+[node name="Portal" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_bx4x7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pd6tl")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+mesh = SubResource("BoxMesh_gp4mo")
+
+[node name="Ace78947-9a0f-4Ac5-a603-b43e42a1Da853b017943-5Ef1-4a45-b563-de7919e8Ac7d" type="Sprite2D" parent="."]
+position = Vector2(170, 96)
+texture = ExtResource("2_pd6tl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

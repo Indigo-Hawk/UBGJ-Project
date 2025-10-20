@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://dlq5lyppjqcgx"]
+
+[ext_resource type="Script" uid="uid://bg0eavi72hy34" path="res://body(basic).gd" id="1_x63y2"]
+[ext_resource type="PackedScene" uid="uid://xgwgrl4nbkmt" path="res://launcher.tscn" id="2_vwnuo"]
+[ext_resource type="PackedScene" uid="uid://dtr4rxluochx1" path="res://Mods/walk_mod.tscn" id="3_5jtq2"]
+[ext_resource type="PackedScene" uid="uid://dr3e6stx2np8w" path="res://Mods/gravity_mod.tscn" id="4_jbtqq"]
+[ext_resource type="PackedScene" uid="uid://d3n0ldbv7yigt" path="res://Mods/arms_mod.tscn" id="5_j2sat"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_x63y2"]
+radius = 30.0
+height = 60.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwnuo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vwnuo"]
+radius = 30.0167
+
+[sub_resource type="PrismMesh" id="PrismMesh_jbtqq"]
+size = Vector3(50, 50, 1)
+
+[node name="Body(Basic)" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_x63y2")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+mesh = SubResource("SphereMesh_x63y2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vwnuo")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_vwnuo")
+
+[node name="HeadPoint" type="Node2D" parent="."]
+visible = false
+position = Vector2(0, -57)
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="HeadPoint"]
+position = Vector2(0, 6)
+mesh = SubResource("PrismMesh_jbtqq")
+
+[node name="Launcher" parent="HeadPoint" instance=ExtResource("2_vwnuo")]
+
+[node name="WalkMod" parent="." instance=ExtResource("3_5jtq2")]
+
+[node name="GravityMod" parent="." instance=ExtResource("4_jbtqq")]
+
+[node name="ArmsMod" parent="." instance=ExtResource("5_j2sat")]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="Launched" from="HeadPoint/Launcher" to="." method="_on_launcher_launched"]
