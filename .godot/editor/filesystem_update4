@@ -8,3 +8,4 @@ res://Globals.gd
 res://launcher.gd
 res://Components/EndZone/end_zone.gd
 res://main_camera.gd
+res://Levels/test.tscn

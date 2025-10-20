@@ -29,6 +29,7 @@ window/stretch/mode="viewport"
 
 folder_colors={
 "res://Components/": "blue",
+"res://Levels/": "red",
 "res://Mods/": "green"
 }
 

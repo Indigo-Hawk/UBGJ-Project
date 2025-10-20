@@ -1,19 +1,19 @@
 [gd_scene load_steps=9 format=3 uid="uid://tow7jq6i4nf0"]
 
-[ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="1_vbegm"]
-[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://main_camera.tscn" id="2_8uh7m"]
-[ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://body(basic).tscn" id="3_6uqi0"]
-[ext_resource type="PackedScene" uid="uid://dshq5wpgg711i" path="res://Components/Door/door.tscn" id="3_ppyta"]
-[ext_resource type="PackedScene" uid="uid://brlcfypgfr5lr" path="res://Components/PressurePad/pressure_pad.tscn" id="4_ykrsh"]
-[ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="5_ykrsh"]
-[ext_resource type="PackedScene" uid="uid://da3bscst3fwvx" path="res://Components/Switch/Switch.tscn" id="6_g14j6"]
+[ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="1_mkyii"]
+[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="2_oe5jq"]
+[ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://Components/Bodys/body(basic).tscn" id="3_q0ila"]
+[ext_resource type="PackedScene" uid="uid://dshq5wpgg711i" path="res://Components/Door/door.tscn" id="4_7t67w"]
+[ext_resource type="PackedScene" uid="uid://brlcfypgfr5lr" path="res://Components/PressurePad/pressure_pad.tscn" id="5_bwca4"]
+[ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="6_upgg8"]
+[ext_resource type="PackedScene" uid="uid://da3bscst3fwvx" path="res://Components/Switch/Switch.tscn" id="7_tqcie"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8uh7m"]
 size = Vector2(593, 160)
 
 [node name="Test" type="Node"]
 
-[node name="Block1" parent="." instance=ExtResource("1_vbegm")]
+[node name="Block1" parent="." instance=ExtResource("1_mkyii")]
 position = Vector2(421, 649)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
@@ -66,33 +66,33 @@ rotation = 0.28522
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
 shape = SubResource("RectangleShape2D_8uh7m")
 
-[node name="MainCamera" parent="." instance=ExtResource("2_8uh7m")]
+[node name="MainCamera" parent="." instance=ExtResource("2_oe5jq")]
 position = Vector2(748, 421)
 
-[node name="Body(Basic)" parent="." instance=ExtResource("3_6uqi0")]
+[node name="Body(Basic)" parent="." instance=ExtResource("3_q0ila")]
 position = Vector2(480, 465)
 LauncherStrength = 1200.0
 
-[node name="Body(Basic)2" parent="." instance=ExtResource("3_6uqi0")]
+[node name="Body(Basic)2" parent="." instance=ExtResource("3_q0ila")]
 position = Vector2(1218, 389)
 isStart = true
 
-[node name="Body(Basic)3" parent="." instance=ExtResource("3_6uqi0")]
+[node name="Body(Basic)3" parent="." instance=ExtResource("3_q0ila")]
 position = Vector2(1014, -131)
 
-[node name="Door" parent="." instance=ExtResource("3_ppyta")]
+[node name="Door" parent="." instance=ExtResource("4_7t67w")]
 position = Vector2(1548, 704)
 
-[node name="Door2" parent="." instance=ExtResource("3_ppyta")]
+[node name="Door2" parent="." instance=ExtResource("4_7t67w")]
 position = Vector2(1591, 706)
 
-[node name="PressurePad" parent="." instance=ExtResource("4_ykrsh")]
+[node name="PressurePad" parent="." instance=ExtResource("5_bwca4")]
 position = Vector2(1181, -73)
 
-[node name="EndZone" parent="." instance=ExtResource("5_ykrsh")]
+[node name="EndZone" parent="." instance=ExtResource("6_upgg8")]
 position = Vector2(2004, 382)
 
-[node name="Switch" parent="." instance=ExtResource("6_g14j6")]
+[node name="Switch" parent="." instance=ExtResource("7_tqcie")]
 position = Vector2(339, 476)
 
 [connection signal="Pressed" from="PressurePad" to="Door" method="Open"]

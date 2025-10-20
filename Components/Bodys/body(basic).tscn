@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dlq5lyppjqcgx"]
 
-[ext_resource type="Script" uid="uid://bg0eavi72hy34" path="res://body(basic).gd" id="1_x63y2"]
-[ext_resource type="PackedScene" uid="uid://xgwgrl4nbkmt" path="res://launcher.tscn" id="2_vwnuo"]
+[ext_resource type="Script" uid="uid://bg0eavi72hy34" path="res://Components/Bodys/body(basic).gd" id="1_x63y2"]
+[ext_resource type="PackedScene" uid="uid://xgwgrl4nbkmt" path="res://Components/Launcher/launcher.tscn" id="2_vwnuo"]
 [ext_resource type="PackedScene" uid="uid://dtr4rxluochx1" path="res://Mods/walk_mod.tscn" id="3_5jtq2"]
 [ext_resource type="PackedScene" uid="uid://dr3e6stx2np8w" path="res://Mods/gravity_mod.tscn" id="4_jbtqq"]
 [ext_resource type="PackedScene" uid="uid://d3n0ldbv7yigt" path="res://Mods/arms_mod.tscn" id="5_j2sat"]

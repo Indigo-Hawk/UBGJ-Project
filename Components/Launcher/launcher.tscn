@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://xgwgrl4nbkmt"]
 
-[ext_resource type="Script" uid="uid://bco08wd4d4pot" path="res://launcher.gd" id="1_4emaf"]
+[ext_resource type="Script" uid="uid://bco08wd4d4pot" path="res://Components/Launcher/launcher.gd" id="1_4emaf"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4emaf"]
 radius = 5.0
