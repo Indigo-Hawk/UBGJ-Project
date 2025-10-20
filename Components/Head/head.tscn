@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cvnh5t3h3cw5b" path="res://Components/Head/head.gd" id="1_xe7ry"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hukeq"]
-radius = 26.0768
+radius = 15.0333
 
 [sub_resource type="PrismMesh" id="PrismMesh_pij62"]
 size = Vector3(50, 50, 1)

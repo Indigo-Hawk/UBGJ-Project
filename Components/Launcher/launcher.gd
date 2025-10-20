@@ -2,7 +2,7 @@ extends Node2D
 
 signal Launched
 
-var HeadScene = preload("res://head.tscn")
+var HeadScene = preload("res://Components/Head/head.tscn")
 
 @export var LaunchStrength:float = 600  #can be overriden by Body
 

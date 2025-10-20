@@ -1,19 +1,22 @@
-[gd_scene load_steps=10 format=3 uid="uid://dlq5lyppjqcgx"]
+[gd_scene load_steps=11 format=3 uid="uid://dlq5lyppjqcgx"]
 
 [ext_resource type="Script" uid="uid://bg0eavi72hy34" path="res://Components/Bodys/body(basic).gd" id="1_x63y2"]
 [ext_resource type="PackedScene" uid="uid://xgwgrl4nbkmt" path="res://Components/Launcher/launcher.tscn" id="2_vwnuo"]
 [ext_resource type="PackedScene" uid="uid://dtr4rxluochx1" path="res://Mods/walk_mod.tscn" id="3_5jtq2"]
 [ext_resource type="PackedScene" uid="uid://dr3e6stx2np8w" path="res://Mods/gravity_mod.tscn" id="4_jbtqq"]
 [ext_resource type="PackedScene" uid="uid://d3n0ldbv7yigt" path="res://Mods/arms_mod.tscn" id="5_j2sat"]
+[ext_resource type="Texture2D" uid="uid://owx2s38iyea1" path="res://Art/player_idle.png" id="6_oheoo"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_x63y2"]
 radius = 30.0
 height = 60.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vwnuo"]
+size = Vector2(20, 81)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vwnuo"]
-radius = 30.0167
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c84ur"]
+radius = 15.0
+height = 90.0
 
 [sub_resource type="PrismMesh" id="PrismMesh_jbtqq"]
 size = Vector3(50, 50, 1)
@@ -22,11 +25,14 @@ size = Vector3(50, 50, 1)
 collision_layer = 4
 collision_mask = 7
 script = ExtResource("1_x63y2")
+LauncherStrength = 800.0
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
 mesh = SubResource("SphereMesh_x63y2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_vwnuo")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -34,11 +40,11 @@ collision_layer = 0
 collision_mask = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_vwnuo")
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_c84ur")
 
 [node name="HeadPoint" type="Node2D" parent="."]
-visible = false
-position = Vector2(0, -57)
+position = Vector2(0, -76)
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="HeadPoint"]
 position = Vector2(0, 6)
@@ -51,6 +57,10 @@ mesh = SubResource("PrismMesh_jbtqq")
 [node name="GravityMod" parent="." instance=ExtResource("4_jbtqq")]
 
 [node name="ArmsMod" parent="." instance=ExtResource("5_j2sat")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("6_oheoo")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="Launched" from="HeadPoint/Launcher" to="." method="_on_launcher_launched"]
