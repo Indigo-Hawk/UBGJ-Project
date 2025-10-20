@@ -10,3 +10,5 @@ res://Globals.gd
 res://Components/Launcher/launcher.tscn
 res://Components/Head/head.gd
 res://Components/UI/main_menu.gd
+res://Components/Camera/main_camera.gd
+res://Components/Block/block_2.tscn

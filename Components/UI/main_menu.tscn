@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhyiet2epxdbu"]
+[gd_scene load_steps=5 format=3 uid="uid://bhyiet2epxdbu"]
 
 [ext_resource type="Script" uid="uid://cnj6wehhp10af" path="res://Components/UI/main_menu.gd" id="1_crcef"]
 [ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="2_4h3tf"]
 [ext_resource type="Texture2D" uid="uid://cbcgqcdmc5um6" path="res://Art/menu_buttons.png" id="3_h742b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h742b"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -12,6 +14,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_crcef")
+
+[node name="MainCamera" parent="." instance=ExtResource("2_4h3tf")]
 
 [node name="Main" type="Control" parent="."]
 visible = false
@@ -69,7 +73,8 @@ offset_bottom = -132.0
 scale = Vector2(10, 10)
 text = "Game"
 
-[node name="MainCamera" parent="." instance=ExtResource("2_4h3tf")]
+[node name="Title" type="AnimatedSprite2D" parent="Main"]
+sprite_frames = SubResource("SpriteFrames_h742b")
 
 [node name="Settings" type="Control" parent="."]
 anchors_preset = 0
@@ -109,7 +114,9 @@ offset_left = -496.0
 offset_top = -382.0
 offset_right = 206.0
 offset_bottom = -366.0
-value = 50.0
+min_value = -10.0
+max_value = 5.0
+step = 0.1
 
 [node name="CheckButton" type="CheckButton" parent="Settings"]
 layout_mode = 0
@@ -119,7 +126,19 @@ offset_right = -333.0
 offset_bottom = -276.0
 button_pressed = true
 
+[node name="SettingsBack" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = -664.0
+offset_top = -208.0
+offset_right = -372.0
+offset_bottom = -61.0
+text = "Back
+"
+
 [connection signal="button_up" from="Main/Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Main/Button2" to="." method="_on_button_2_button_up"]
 [connection signal="button_up" from="Main/Settings" to="." method="_on_settings_button_up"]
 [connection signal="button_up" from="Main/Credits" to="." method="_on_credits_button_up"]
+[connection signal="value_changed" from="Settings/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="toggled" from="Settings/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="Settings/SettingsBack" to="." method="_on_settings_back_pressed"]

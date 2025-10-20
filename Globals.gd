@@ -3,7 +3,7 @@ extends Node
 var head:Head = null
 var PlayerPos:Vector2 = Vector2.ZERO
 
-
+var MovingBackground:bool = true
 
 
 func _input(event: InputEvent) -> void:

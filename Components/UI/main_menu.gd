@@ -14,4 +14,24 @@ func _on_credits_button_up() -> void:
 
 
 func _on_settings_button_up() -> void:
-	pass # Replace with function body.
+	$Main.visible = false
+	$Settings.visible = true
+
+
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(0,value)
+
+
+func _on_check_button_toggled(toggled_on: bool) -> void:
+	if toggled_on:
+		Globals.MovingBackground = true
+	else:
+		Globals.MovingBackground = false
+		get_tree().call_group("Camera","stopBackground")
+
+
+func _on_settings_back_pressed() -> void:
+	$Main.visible = true
+	$Settings.visible = false
