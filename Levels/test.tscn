@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://tow7jq6i4nf0"]
+[gd_scene load_steps=8 format=3 uid="uid://tow7jq6i4nf0"]
 
 [ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="1_mkyii"]
 [ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="2_oe5jq"]
@@ -8,63 +8,40 @@
 [ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="6_upgg8"]
 [ext_resource type="PackedScene" uid="uid://da3bscst3fwvx" path="res://Components/Switch/Switch.tscn" id="7_tqcie"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8uh7m"]
-size = Vector2(593, 160)
-
 [node name="Test" type="Node"]
 
-[node name="Block1" parent="." instance=ExtResource("1_mkyii")]
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block1" parent="Blocks" instance=ExtResource("1_mkyii")]
 position = Vector2(421, 649)
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(120, 347)
-rotation = 0.706306
+[node name="Block2" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(-43, 387)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-63.878, 89.9867)
-shape = SubResource("RectangleShape2D_8uh7m")
+[node name="Block3" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(1174, 587)
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2(820, 537)
-rotation = -0.146808
+[node name="Block4" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(134, 135)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-shape = SubResource("RectangleShape2D_8uh7m")
+[node name="Block5" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(130, -129)
 
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2(1491, 22)
-rotation = 1.14185
+[node name="Block6" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(1224, 69)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-shape = SubResource("RectangleShape2D_8uh7m")
+[node name="Block8" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(1625, -183)
 
-[node name="StaticBody2D6" type="StaticBody2D" parent="."]
-position = Vector2(1832, 497)
-rotation = 0.00257289
+[node name="Block10" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(862, -395)
+scale = Vector2(2.12154, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
-shape = SubResource("RectangleShape2D_8uh7m")
+[node name="Block7" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(1674, 484)
 
-[node name="StaticBody2D5" type="StaticBody2D" parent="."]
-position = Vector2(1289, 532)
-rotation = -0.00375152
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
-shape = SubResource("RectangleShape2D_8uh7m")
-
-[node name="StaticBody2D7" type="StaticBody2D" parent="."]
-position = Vector2(1165, 9)
-rotation = -0.00375152
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
-shape = SubResource("RectangleShape2D_8uh7m")
-
-[node name="StaticBody2D8" type="StaticBody2D" parent="."]
-position = Vector2(1043, -367)
-rotation = 0.28522
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
-shape = SubResource("RectangleShape2D_8uh7m")
+[node name="Block9" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(813, 739)
 
 [node name="MainCamera" parent="." instance=ExtResource("2_oe5jq")]
 position = Vector2(748, 421)
@@ -81,16 +58,16 @@ isStart = true
 position = Vector2(1014, -131)
 
 [node name="Door" parent="." instance=ExtResource("4_7t67w")]
-position = Vector2(1548, 704)
+position = Vector2(1428, 282)
 
 [node name="Door2" parent="." instance=ExtResource("4_7t67w")]
-position = Vector2(1591, 706)
+position = Vector2(1471, 284)
 
 [node name="PressurePad" parent="." instance=ExtResource("5_bwca4")]
 position = Vector2(1181, -73)
 
 [node name="EndZone" parent="." instance=ExtResource("6_upgg8")]
-position = Vector2(2004, 382)
+position = Vector2(1832, 314)
 
 [node name="Switch" parent="." instance=ExtResource("7_tqcie")]
 position = Vector2(339, 476)

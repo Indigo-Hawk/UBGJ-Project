@@ -18,6 +18,7 @@ Art TODO:
 	Body animation
 	Head
 	Large Blockout walls/Floars
+	Exit Area
 	
 Settings:
 	list controls

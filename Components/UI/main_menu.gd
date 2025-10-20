@@ -1,5 +1,8 @@
 extends Control
 
+func _ready() -> void:
+	$Main/Title.play("default")
+
 
 func _on_button_button_up() -> void:
 			get_tree().call_deferred("change_scene_to_file","res://Levels/test.tscn")
