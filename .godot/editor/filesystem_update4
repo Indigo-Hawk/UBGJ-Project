@@ -8,3 +8,5 @@ res://Components/UI/main_menu.tscn
 res://Components/Head/head.tscn
 res://Globals.gd
 res://Components/Launcher/launcher.tscn
+res://Components/Head/head.gd
+res://Components/UI/main_menu.gd

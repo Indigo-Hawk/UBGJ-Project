@@ -18,3 +18,20 @@ shape = SubResource("CircleShape2D_hukeq")
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 position = Vector2(0, 6)
 mesh = SubResource("PrismMesh_pij62")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -84.0
+offset_top = -102.0
+offset_right = 94.0
+offset_bottom = -79.0
+text = "Press R to restart Level"
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
