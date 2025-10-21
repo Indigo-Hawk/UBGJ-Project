@@ -12,6 +12,34 @@ size = Vector3(50, 50, 1)
 collision_layer = 2
 script = ExtResource("1_xe7ry")
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = -219.0
+offset_right = 194.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 35
+text = "Press R to restart Level"
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hukeq")
 
@@ -21,17 +49,5 @@ mesh = SubResource("PrismMesh_pij62")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
-
-[node name="Label" type="Label" parent="."]
-visible = false
-offset_left = -84.0
-offset_top = -102.0
-offset_right = 94.0
-offset_bottom = -79.0
-text = "Press R to restart Level"
-
-[node name="Label2" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

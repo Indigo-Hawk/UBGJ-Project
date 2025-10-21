@@ -6,6 +6,9 @@ class_name Head
 var isFree = true
 
 func _physics_process(delta: float) -> void:
+	
+	$Control.rotation = -rotation
+	
 	if !isFree:
 		return
 	
@@ -22,8 +25,9 @@ func _physics_process(delta: float) -> void:
 			$Timer.start()
 	if abs(linear_velocity.length()) > 1:
 		$Timer.stop()
+		$Control/Label.visible = false
 		
 
 
 func _on_timer_timeout() -> void:
-	$Label.visible = true 
+	$Control/Label.visible = true 

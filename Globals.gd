@@ -20,6 +20,8 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("RESET"):
 		get_tree().reload_current_scene()
+		if head != null:
+			head.queue_free()
 
 func changeScenes(FileName:String) ->void:
 	get_tree().call_deferred("change_scene_to_file",FileName)

@@ -1,3 +1,5 @@
+Control
+Node
 AudioStreamPlayer
 Node2D
 AnimatedSprite2D
@@ -5,11 +7,8 @@ Button
 CheckButton
 HSlider
 Label
-Control
 Timer
 Sprite2D
-Node
 AnimationPlayer
 TileMapLayer
 WorldEnvironment
-MeshInstance2D
