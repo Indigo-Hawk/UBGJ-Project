@@ -67,7 +67,7 @@ position = Vector2(1471, 284)
 position = Vector2(1181, -73)
 
 [node name="EndZone" parent="." instance=ExtResource("6_upgg8")]
-position = Vector2(1832, 314)
+position = Vector2(1655, 334)
 
 [node name="Switch" parent="." instance=ExtResource("7_tqcie")]
 position = Vector2(339, 476)

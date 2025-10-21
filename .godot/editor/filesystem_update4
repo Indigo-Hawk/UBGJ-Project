@@ -14,3 +14,7 @@ res://Components/Camera/main_camera.gd
 res://Components/Block/block_2.tscn
 res://Components/Block/block_3.tscn
 res://Components/Bodys/body(basic).gd
+res://Components/EndZone/end_zone.tscn
+res://Components/MusicPlayer/music_player.gd
+res://Components/MusicPlayer/music_player.tscn
+res://default_bus_layout.tres

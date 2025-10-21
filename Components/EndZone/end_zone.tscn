@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://71x2sq1tvg6k"]
+[gd_scene load_steps=4 format=3 uid="uid://71x2sq1tvg6k"]
 
 [ext_resource type="Script" uid="uid://r8wxr6wbp7h1" path="res://Components/EndZone/end_zone.gd" id="1_kkw75"]
+[ext_resource type="Texture2D" uid="uid://xglfrdjltbyq" path="res://Art/finish.png" id="2_vi2ac"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vi2ac"]
 radius = 50.0
@@ -12,5 +13,11 @@ script = ExtResource("1_kkw75")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_vi2ac")
+
+[node name="Finish" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(15, -9)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_vi2ac")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

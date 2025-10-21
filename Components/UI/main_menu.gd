@@ -2,10 +2,12 @@ extends Control
 
 func _ready() -> void:
 	$Main/Title.play("default")
+	Globals.PlayMusic(0)
 
 
 func _on_button_button_up() -> void:
 			get_tree().call_deferred("change_scene_to_file","res://Levels/test.tscn")
+			Globals.call_deferred("PlayMusic",1)
 
 
 func _on_button_2_button_up() -> void:
