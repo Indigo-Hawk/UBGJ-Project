@@ -1,13 +1,13 @@
+Timer
+AnimatedSprite2D
 Control
 Node
 AudioStreamPlayer
 Node2D
-AnimatedSprite2D
 Button
 CheckButton
 HSlider
 Label
-Timer
 Sprite2D
 AnimationPlayer
 TileMapLayer

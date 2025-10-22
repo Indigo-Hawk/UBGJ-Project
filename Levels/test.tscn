@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://tow7jq6i4nf0"]
+[gd_scene load_steps=9 format=3 uid="uid://tow7jq6i4nf0"]
 
 [ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="1_mkyii"]
 [ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="2_oe5jq"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://brlcfypgfr5lr" path="res://Components/PressurePad/pressure_pad.tscn" id="5_bwca4"]
 [ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="6_upgg8"]
 [ext_resource type="PackedScene" uid="uid://da3bscst3fwvx" path="res://Components/Switch/Switch.tscn" id="7_tqcie"]
+[ext_resource type="PackedScene" uid="uid://djdopxl8rdnka" path="res://Components/Portal/portal.tscn" id="8_oe5jq"]
 
 [node name="Test" type="Node"]
 
@@ -71,6 +72,14 @@ position = Vector2(1655, 334)
 
 [node name="Switch" parent="." instance=ExtResource("7_tqcie")]
 position = Vector2(339, 476)
+
+[node name="Portal" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("8_oe5jq")]
+position = Vector2(771, 531)
+connectedPortal = NodePath("../Portal2")
+
+[node name="Portal2" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("8_oe5jq")]
+position = Vector2(476, -164)
+connectedPortal = NodePath("../Portal")
 
 [connection signal="Pressed" from="PressurePad" to="Door" method="Open"]
 [connection signal="Unpressed" from="PressurePad" to="Door" method="Close"]

@@ -21,3 +21,5 @@ res://default_bus_layout.tres
 res://Components/Grid/grid.tscn
 res://Components/PressurePad/pressure_pad.tscn
 res://Components/PressurePad/pressure_pad.gd
+res://Components/Portal/portal.tscn
+res://Components/Portal/portal.gd
