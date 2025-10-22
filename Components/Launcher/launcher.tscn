@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://xgwgrl4nbkmt"]
+[gd_scene load_steps=6 format=3 uid="uid://xgwgrl4nbkmt"]
 
 [ext_resource type="Script" uid="uid://bco08wd4d4pot" path="res://Components/Launcher/launcher.gd" id="1_4emaf"]
 
@@ -6,9 +6,13 @@
 radius = 5.0
 height = 10.0
 
+[sub_resource type="Curve" id="Curve_8gn4j"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.808989), 0.0, 0.0, 0, 0]
+point_count = 2
+
 [sub_resource type="Gradient" id="Gradient_4emaf"]
 offsets = PackedFloat32Array(0, 0.697531)
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+colors = PackedColorArray(1, 0.576471, 0, 0.623529, 1, 0.427451, 0, 0)
 
 [sub_resource type="BoxMesh" id="BoxMesh_4emaf"]
 size = Vector3(5, 5, 5)
@@ -22,6 +26,7 @@ visible = false
 mesh = SubResource("SphereMesh_4emaf")
 
 [node name="Line2D" type="Line2D" parent="."]
+width_curve = SubResource("Curve_8gn4j")
 gradient = SubResource("Gradient_4emaf")
 joint_mode = 1
 

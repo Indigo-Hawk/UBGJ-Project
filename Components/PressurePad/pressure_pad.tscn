@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://brlcfypgfr5lr"]
+[gd_scene load_steps=4 format=3 uid="uid://brlcfypgfr5lr"]
 
 [ext_resource type="Script" uid="uid://4n0tkpdic6i7" path="res://Components/PressurePad/pressure_pad.gd" id="1_v0ddx"]
+[ext_resource type="Texture2D" uid="uid://cscfr2if6ncvf" path="res://Art/pressure_pad.png" id="2_xhxwj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v0ddx"]
 size = Vector2(100, 10)
@@ -12,6 +13,12 @@ script = ExtResource("1_v0ddx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_v0ddx")
+
+[node name="PressurePad" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(0, 3)
+scale = Vector2(0.15, 0.09)
+texture = ExtResource("2_xhxwj")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

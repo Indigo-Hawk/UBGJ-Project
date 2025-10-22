@@ -64,7 +64,7 @@ position = Vector2(1428, 282)
 position = Vector2(1471, 284)
 
 [node name="PressurePad" parent="." instance=ExtResource("5_bwca4")]
-position = Vector2(1181, -73)
+position = Vector2(1182, -68)
 
 [node name="EndZone" parent="." instance=ExtResource("6_upgg8")]
 position = Vector2(1655, 334)
