@@ -1,0 +1,95 @@
+[gd_scene load_steps=6 format=3 uid="uid://4xtj1pb84h2p"]
+
+[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_3ten1"]
+[ext_resource type="PackedScene" uid="uid://bddjdhdyavhtq" path="res://Components/Head/head.tscn" id="2_lgndu"]
+[ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="3_yttsi"]
+[ext_resource type="PackedScene" uid="uid://c7dgl4dli5vue" path="res://Components/Block/block_3.tscn" id="4_ivsm0"]
+[ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://Components/Bodys/body(basic).tscn" id="5_lgndu"]
+
+[node name="Level_T" type="Node"]
+
+[node name="MainCamera" parent="." instance=ExtResource("1_3ten1")]
+position = Vector2(-192, -572)
+
+[node name="Head" parent="." instance=ExtResource("2_lgndu")]
+position = Vector2(-244, -2657)
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block1" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(172, 127)
+scale = Vector2(3, 2)
+
+[node name="Block9" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1661, 120)
+scale = Vector2(3, 2)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1092, -918)
+scale = Vector2(3, 2)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(-836, -570)
+rotation = 1.5708
+scale = Vector2(3, 2)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(-896, -2302)
+rotation = 1.5708
+scale = Vector2(6, 4)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(406, -2316)
+rotation = 1.5708
+scale = Vector2(6, 4)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("4_ivsm0")]
+position = Vector2(-98, -727)
+rotation = -0.45849
+
+[node name="Block5" parent="Blocks" instance=ExtResource("4_ivsm0")]
+position = Vector2(-378, -364)
+rotation = -2.6401
+
+[node name="Block7" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(-396, -129)
+
+[node name="Block8" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(962, -179)
+
+[node name="Bodies" type="Node2D" parent="."]
+
+[node name="Body(Basic)" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(-54, -184)
+
+[node name="Body(Basic)2" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(1309, -204)
+
+[node name="Text" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Text"]
+offset_left = -120.0
+offset_top = -94.0
+offset_right = 347.0
+offset_bottom = -45.0
+theme_override_colors/font_color = Color(1, 0.596078, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "A & D to move left and right"
+
+[node name="Label2" type="Label" parent="Text"]
+offset_left = 621.0
+offset_top = -762.0
+offset_right = 1088.0
+offset_bottom = -713.0
+theme_override_colors/font_color = Color(1, 0.596078, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Space or LMB to throw your Head"
+
+[node name="Label3" type="Label" parent="Text"]
+offset_left = 1529.0
+offset_top = -103.0
+offset_right = 2096.0
+offset_bottom = -54.0
+theme_override_colors/font_color = Color(1, 0.596078, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "You also move when your just a head"

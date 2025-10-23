@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciq07ehnyboh3"]
+
+[ext_resource type="Script" uid="uid://dunlxfn6x5q0g" path="res://Components/EndScene/end_screen.gd" id="1_fn16l"]
+[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_ht4c1"]
+[ext_resource type="Texture2D" uid="uid://xglfrdjltbyq" path="res://Art/finish.png" id="3_g51v5"]
+
+[node name="EndScreen" type="Node"]
+script = ExtResource("1_fn16l")
+
+[node name="MainCamera" parent="." instance=ExtResource("1_ht4c1")]
+position = Vector2(17, 7)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -204.311
+offset_top = -210.935
+offset_right = 219.689
+offset_bottom = -73.9349
+theme_override_colors/font_color = Color(0.0980392, 0.176471, 0.247059, 1)
+theme_override_colors/font_outline_color = Color(1, 0.960784, 0.941176, 0.47451)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 100
+text = "You Win!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -190.311
+offset_top = -19.9349
+offset_right = 233.689
+offset_bottom = 117.065
+theme_override_colors/font_color = Color(0.0980392, 0.176471, 0.247059, 1)
+theme_override_colors/font_outline_color = Color(1, 0.960784, 0.941176, 0.47451)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 40
+text = "Thanks For Playing"
+
+[node name="Button" type="Button" parent="."]
+offset_left = -228.0
+offset_top = 473.0
+offset_right = 199.0
+offset_bottom = 604.0
+theme_override_font_sizes/font_size = 35
+text = "Back to Main Menu"
+
+[node name="Finish" type="Sprite2D" parent="."]
+position = Vector2(454.689, 76.0651)
+rotation = 0.719593
+scale = Vector2(2, 2)
+texture = ExtResource("3_g51v5")
+
+[node name="Finish3" type="Sprite2D" parent="."]
+position = Vector2(-447.311, 80.0651)
+rotation = -0.719076
+scale = Vector2(2, 2)
+texture = ExtResource("3_g51v5")
+flip_h = true
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

@@ -20,86 +20,86 @@ position = Vector2(266, 346)
 
 [node name="Block28" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(160, 949)
-rotation = 3.1415927
-scale = Vector2(0.040002912, -0.79999995)
+rotation = 3.14159
+scale = Vector2(0.0400029, -0.8)
 
 [node name="Block24" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(-236.00002, 634)
-rotation = 1.5707985
-scale = Vector2(0.040002912, -1.134062)
+position = Vector2(-236, 634)
+rotation = 1.5708
+scale = Vector2(0.0400029, -1.13406)
 
 [node name="Block29" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(351, 788.99994)
-rotation = -3.1415927
-scale = Vector2(0.04000291, -0.35999745)
+position = Vector2(351, 789)
+rotation = -3.14159
+scale = Vector2(0.0400029, -0.359997)
 
 [node name="Block20" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(298, 829)
-rotation = 1.5707941
-scale = Vector2(0.11999816, 2.0400038)
+rotation = 1.57079
+scale = Vector2(0.119998, 2.04)
 
 [node name="Block19" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(46.000004, 720)
-scale = Vector2(0.11999816, 1)
+position = Vector2(46, 720)
+scale = Vector2(0.119998, 1)
 
 [node name="Block25" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(14.0000305, 866)
-rotation = -2.5328822
-scale = Vector2(0.052547127, -0.6816601)
+position = Vector2(14, 866)
+rotation = -2.53288
+scale = Vector2(0.0525471, -0.68166)
 
 [node name="Block22" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(-52, 759.00006)
-scale = Vector2(-0.040002912, 0.56)
+position = Vector2(-52, 759)
+scale = Vector2(-0.0400029, 0.56)
 
 [node name="Block26" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(-126.00001, 939.00006)
-scale = Vector2(-0.040002912, 0.79999995)
+position = Vector2(-126, 939)
+scale = Vector2(-0.0400029, 0.8)
 
 [node name="Block27" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(-39.000008, 1090)
-scale = Vector2(-0.040002912, 0.79999995)
+position = Vector2(-39, 1090)
+scale = Vector2(-0.0400029, 0.8)
 
 [node name="Block23" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(-68.000015, 667)
-rotation = -0.49084362
-scale = Vector2(-0.040002912, 0.33406126)
+position = Vector2(-68, 667)
+rotation = -0.490844
+scale = Vector2(-0.0400029, 0.334061)
 
 [node name="Block21" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(452.99997, 540)
-rotation = 0.90902215
-scale = Vector2(-0.06960415, 1.3111029)
+position = Vector2(453, 540)
+rotation = 0.909022
+scale = Vector2(-0.0696042, 1.3111)
 
 [node name="Block16" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(-243.00002, 159.99997)
-rotation = 1.5314339
-scale = Vector2(0.39141166, -3.0239692)
+position = Vector2(-243, 160)
+rotation = 1.53143
+scale = Vector2(0.391412, -3.02397)
 
 [node name="Block5" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(-364, 508)
-scale = Vector2(1.4800001, 0.27999997)
+scale = Vector2(1.48, 0.28)
 
 [node name="Block13" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(806, 642)
 
 [node name="Block17" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(-215, 830.99994)
-scale = Vector2(0.6963235, 0.12000364)
+position = Vector2(-215, 831)
+scale = Vector2(0.696324, 0.120004)
 
 [node name="Block3" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(804, 386)
 
 [node name="Block18" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(189.99998, 434.99997)
-rotation = -0.8276243
-scale = Vector2(0.54614204, 0.15015136)
+position = Vector2(190, 435)
+rotation = -0.827624
+scale = Vector2(0.546142, 0.150151)
 
 [node name="Block14" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(156, 426)
-scale = Vector2(0.10496897, 0.6060422)
+scale = Vector2(0.104969, 0.606042)
 
 [node name="Block15" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(155, 153)
-scale = Vector2(0.10496897, 0.6060422)
+scale = Vector2(0.104969, 0.606042)
 
 [node name="Block4" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(-616, 395)
@@ -127,7 +127,6 @@ position = Vector2(386, 1168)
 
 [node name="Block1" parent="Blocks" instance=ExtResource("3_rfktq")]
 position = Vector2(81, 512)
-rotation = -0.347896
 
 [node name="EndZone" parent="Blocks" instance=ExtResource("4_syshm")]
 position = Vector2(85, 1018)
@@ -174,7 +173,7 @@ connectedPortal = NodePath("../Portal3")
 
 [node name="Portal3" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_xoyoh")]
 position = Vector2(-337, 582)
-scale = Vector2(0.46949944, -0.643129)
+scale = Vector2(0.469499, -0.643129)
 connectedPortal = NodePath("../Portal4")
 
 [node name="Switch" parent="." instance=ExtResource("10_f4pg2")]

@@ -1,4 +1,5 @@
 res://Levels
+res://Components/EndScene
 res://Components/MusicPlayer
 res://Components/Grid
 res://Components/Block
