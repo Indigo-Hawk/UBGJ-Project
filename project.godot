@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="UBGJ Game"
-run/main_scene="uid://tow7jq6i4nf0"
-config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+config/name="Use Your Head"
+run/main_scene="uid://bhyiet2epxdbu"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/icon="uid://crwxreqablf0h"
 
 [autoload]
 
