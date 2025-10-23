@@ -24,6 +24,9 @@ func _input(event: InputEvent) -> void:
 			head.queue_free()
 
 func changeScenes(FileName:String) ->void:
+	if not ResourceLoader.exists(FileName):
+		push_error("FileName for change scene is an invalid scene path", FileName)
+		return
 	get_tree().call_deferred("change_scene_to_file",FileName)
 	call_deferred("_resetPos")
 	if head != null:
