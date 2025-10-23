@@ -23,17 +23,17 @@ position = Vector2(-244, -2657)
 
 [node name="Block25" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(2754, 218)
-rotation = -1.570803
-scale = Vector2(0.6828985, 3.8915513)
+rotation = -1.5708
+scale = Vector2(0.682899, 3.89155)
 
 [node name="Block1" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(172, 127)
 scale = Vector2(3, 2)
 
 [node name="Block26" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(3387.0002, 222)
-rotation = -4.7123823
-scale = Vector2(0.6828985, 2.1315463)
+position = Vector2(3387, 222)
+rotation = -4.71238
+scale = Vector2(0.682899, 2.13155)
 
 [node name="Block9" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(1661, 120)
@@ -56,152 +56,152 @@ scale = Vector2(6, 4)
 
 [node name="Block20" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(2255, -462)
-rotation = -1.570803
-scale = Vector2(0.6828985, 0.9715515)
+rotation = -1.5708
+scale = Vector2(0.682899, 0.971551)
 
 [node name="Block21" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(2751.9998, 15.000092)
-rotation = -1.570803
-scale = Vector2(0.6828985, 0.9715515)
+position = Vector2(2752, 15.0001)
+rotation = -1.5708
+scale = Vector2(0.682899, 0.971551)
 
 [node name="Block36" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(3897, 167)
-rotation = -1.570803
-scale = Vector2(0.7554545, -2.8284788)
+rotation = -1.5708
+scale = Vector2(0.755454, -2.82848)
 
 [node name="Block37" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(5281, 136.00002)
-rotation = -4.711736
-scale = Vector2(0.7554545, -2.8284788)
+position = Vector2(5281, 136)
+rotation = -4.71174
+scale = Vector2(0.755454, -2.82848)
 
 [node name="Block38" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(5286.0005, -191.99995)
-rotation = -4.711736
-scale = Vector2(0.7554545, -2.8284788)
+position = Vector2(5286, -192)
+rotation = -4.71174
+scale = Vector2(0.755454, -2.82848)
 
 [node name="Block40" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(6859, -861.99994)
-rotation = -1.5707941
-scale = Vector2(1.0476785, -3.3749702)
+position = Vector2(6859, -862)
+rotation = -1.57079
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block41" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(6853, -357)
-rotation = -1.5707941
-scale = Vector2(1.0476785, -3.3749702)
+rotation = -1.57079
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block43" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(7718.0005, -350.99997)
-rotation = -1.5707941
-scale = Vector2(1.0476785, -3.3749702)
+position = Vector2(7718, -351)
+rotation = -1.57079
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block48" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(6851.0005, -1346)
-rotation = 1.570803
-scale = Vector2(1.0476785, -3.3749702)
+position = Vector2(6851, -1346)
+rotation = 1.5708
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block47" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(7716, -1346)
-rotation = 1.570803
-scale = Vector2(1.0476785, -3.3749702)
+rotation = 1.5708
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block44" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(8585, -349)
-rotation = -1.5707941
-scale = Vector2(1.0476785, -3.3749702)
+rotation = -1.57079
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block45" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(8579.001, -813)
-rotation = -4.7123823
-scale = Vector2(1.0476785, -3.3749702)
+position = Vector2(8579, -813)
+rotation = -4.71238
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block46" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(8587.001, -1331)
-rotation = -4.7123823
-scale = Vector2(1.0476785, -3.3749702)
+position = Vector2(8587, -1331)
+rotation = -4.71238
+scale = Vector2(1.04768, -3.37497)
 
 [node name="Block39" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(4716, -237)
-rotation = -4.711736
-scale = Vector2(0.7554545, -2.8284788)
+rotation = -4.71174
+scale = Vector2(0.755454, -2.82848)
 
 [node name="Block24" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(3126, 14.999999)
-rotation = -1.570803
-scale = Vector2(0.6828985, 0.9715515)
+position = Vector2(3126, 15)
+rotation = -1.5708
+scale = Vector2(0.682899, 0.971551)
 
 [node name="Block27" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(3541.9998, 19)
-rotation = -1.570803
-scale = Vector2(0.6828985, 0.9715515)
+position = Vector2(3542, 19)
+rotation = -1.5708
+scale = Vector2(0.682899, 0.971551)
 
 [node name="Block28" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(3603, -178.00003)
-rotation = -1.570803
-scale = Vector2(0.6828985, 0.5315564)
+position = Vector2(3603, -178)
+rotation = -1.5708
+scale = Vector2(0.682899, 0.531556)
 
 [node name="Block22" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(2506, -648.0001)
-rotation = -1.570803
-scale = Vector2(0.68333405, 5.126343)
+position = Vector2(2506, -648)
+rotation = -1.5708
+scale = Vector2(0.683334, 5.12634)
 
 [node name="Block42" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(4875, -712.9999)
-rotation = -1.570803
-scale = Vector2(1.7228961, 2.8515513)
+position = Vector2(4875, -713)
+rotation = -1.5708
+scale = Vector2(1.7229, 2.85155)
 
 [node name="Block19" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(2126, -291.99997)
-rotation = -1.570803
-scale = Vector2(-0.03710272, 1.2915515)
+position = Vector2(2126, -292)
+rotation = -1.5708
+scale = Vector2(-0.0371027, 1.29155)
 
 [node name="Block18" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(2082.0002, -599)
-rotation = -1.570803
-scale = Vector2(0.60289854, 2.0915563)
+position = Vector2(2082, -599)
+rotation = -1.5708
+scale = Vector2(0.602899, 2.09156)
 
 [node name="Block2" parent="Blocks" instance=ExtResource("4_ivsm0")]
 position = Vector2(-98, -727)
 rotation = -0.45849
 
 [node name="Block32" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(3968.0005, -137.99998)
-rotation = -1.570803
-scale = Vector2(0.6828985, 2.2515416)
+position = Vector2(3968, -138)
+rotation = -1.5708
+scale = Vector2(0.682899, 2.25154)
 
 [node name="Block35" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(4558, 348.99997)
-rotation = -1.570803
-scale = Vector2(0.16195966, 3.6353185)
+position = Vector2(4558, 349)
+rotation = -1.5708
+scale = Vector2(0.16196, 3.63532)
 
 [node name="Block33" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(4120.0005, -463.99994)
-rotation = -1.5047023
-scale = Vector2(0.68293196, 1.2536385)
+position = Vector2(4120, -464)
+rotation = -1.5047
+scale = Vector2(0.682932, 1.25364)
 
 [node name="Block34" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(4438.0005, -417.99994)
-rotation = -1.5047023
-scale = Vector2(0.68293196, 0.7374179)
+position = Vector2(4438, -418)
+rotation = -1.5047
+scale = Vector2(0.682932, 0.737418)
 
 [node name="Block23" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(3371, -470.99997)
-rotation = -1.570803
-scale = Vector2(0.6828985, 2.8515513)
+position = Vector2(3371, -471)
+rotation = -1.5708
+scale = Vector2(0.682899, 2.85155)
 
 [node name="Block29" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(3310, -982)
-rotation = -1.570803
-scale = Vector2(0.6828985, 2.8515513)
+rotation = -1.5708
+scale = Vector2(0.682899, 2.85155)
 
 [node name="Block30" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(4037.0002, -983.9999)
-rotation = -1.570803
-scale = Vector2(0.6828985, 2.8515513)
+position = Vector2(4037, -984)
+rotation = -1.5708
+scale = Vector2(0.682899, 2.85155)
 
 [node name="Block31" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(4753, -975.99994)
-rotation = -1.570803
-scale = Vector2(0.6828985, 2.8515513)
+position = Vector2(4753, -976)
+rotation = -1.5708
+scale = Vector2(0.682899, 2.85155)
 
 [node name="Block5" parent="Blocks" instance=ExtResource("4_ivsm0")]
 position = Vector2(-378, -364)
@@ -211,35 +211,35 @@ rotation = -2.6401
 position = Vector2(-396, -129)
 
 [node name="Block12" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(1574, -343.00003)
-rotation = 1.5707941
-scale = Vector2(-0.04000368, 1)
+position = Vector2(1574, -343)
+rotation = 1.57079
+scale = Vector2(-0.0400037, 1)
 
 [node name="Block8" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(729, -188)
-scale = Vector2(0.39999753, 0.72000027)
+scale = Vector2(0.399998, 0.72)
 
 [node name="Block16" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(1016, -150)
-scale = Vector2(0.3999951, 1)
+scale = Vector2(0.399995, 1)
 
 [node name="Block17" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(907.99994, -9)
-scale = Vector2(1.4799976, 1)
+position = Vector2(908, -9)
+scale = Vector2(1.48, 1)
 
 [node name="Block11" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(1465, -251)
-scale = Vector2(0.11999756, 1.4399998)
+scale = Vector2(0.119998, 1.44)
 
 [node name="Block13" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(1811, -566)
-rotation = 3.1415882
-scale = Vector2(0.075773485, 2.2685483)
+rotation = 3.14159
+scale = Vector2(0.0757735, 2.26855)
 
 [node name="Block14" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(1687.0001, -418.00006)
-rotation = 4.7123823
-scale = Vector2(0.08289851, 0.9315563)
+position = Vector2(1687, -418)
+rotation = 4.71238
+scale = Vector2(0.0828985, 0.931556)
 
 [node name="Block10" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(1092, -918)
@@ -402,33 +402,33 @@ position = Vector2(2823, -165)
 position = Vector2(3900, -313)
 
 [node name="Portal" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
-position = Vector2(3446, -199.00005)
-rotation = 3.1415875
-scale = Vector2(0.512347, 0.8526969)
+position = Vector2(3446, -199)
+rotation = 3.14159
+scale = Vector2(0.512347, 0.852697)
 connectedPortal = NodePath("../Portal2")
 
 [node name="Portal2" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
 position = Vector2(3235, -691)
-rotation = 3.1415875
-scale = Vector2(0.512347, 0.8526969)
+rotation = 3.14159
+scale = Vector2(0.512347, 0.852697)
 connectedPortal = NodePath("../Portal")
 
 [node name="Portal4" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
-position = Vector2(4402.0005, -621)
-rotation = 3.1415875
-scale = Vector2(0.512347, 0.8526969)
+position = Vector2(4402, -621)
+rotation = 3.14159
+scale = Vector2(0.512347, 0.852697)
 connectedPortal = NodePath("../Portal5")
 
 [node name="EndZone" parent="." instance=ExtResource("10_k1vkr")]
-position = Vector2(7699, -630.9999)
-rotation = -1.255147e-05
-scale = Vector2(0.79234695, 0.8526969)
+position = Vector2(7699, -631)
+rotation = -1.25515e-05
+scale = Vector2(0.792347, 0.852697)
 NextLevel = "res://Levels/test.tscn"
 
 [node name="Portal5" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
-position = Vector2(7388, -678.99994)
-rotation = 3.1415875
-scale = Vector2(0.512347, 0.8526969)
+position = Vector2(7388, -679)
+rotation = 3.14159
+scale = Vector2(0.512347, 0.852697)
 connectedPortal = NodePath("../Portal4")
 
 [connection signal="switchedOff" from="Switch" to="Door" method="Close"]

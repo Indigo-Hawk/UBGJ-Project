@@ -75,5 +75,5 @@ position = Vector2(339, 476)
 
 [connection signal="Pressed" from="PressurePad" to="Door" method="Open"]
 [connection signal="Unpressed" from="PressurePad" to="Door" method="Close"]
-[connection signal="switchedOff" from="Switch" to="Door2" method="Open"]
-[connection signal="switchedOn" from="Switch" to="Door2" method="Close"]
+[connection signal="switchedOff" from="Switch" to="Door2" method="Close"]
+[connection signal="switchedOn" from="Switch" to="Door2" method="Open"]
