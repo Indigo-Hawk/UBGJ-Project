@@ -1,0 +1,115 @@
+[gd_scene load_steps=7 format=3 uid="uid://pe6iuxu80q4g"]
+
+[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_j4gye"]
+[ext_resource type="PackedScene" uid="uid://bddjdhdyavhtq" path="res://Components/Head/head.tscn" id="2_e6b6u"]
+[ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="3_ky6qs"]
+[ext_resource type="PackedScene" uid="uid://brlcfypgfr5lr" path="res://Components/PressurePad/pressure_pad.tscn" id="4_ky6qs"]
+[ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://Components/Bodys/body(basic).tscn" id="4_lwb38"]
+[ext_resource type="PackedScene" uid="uid://dshq5wpgg711i" path="res://Components/Door/door.tscn" id="5_lwb38"]
+
+[node name="Level_T" type="Node"]
+
+[node name="MainCamera" parent="." instance=ExtResource("1_j4gye")]
+position = Vector2(-192, -572)
+
+[node name="Head" parent="." instance=ExtResource("2_e6b6u")]
+position = Vector2(-400, -769)
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block1" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(-450, -389)
+scale = Vector2(0.7600007, 2)
+
+[node name="Block15" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(764, -824)
+rotation = 1.5707964
+scale = Vector2(0.46011913, 1.8)
+
+[node name="Block12" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(323, -660)
+scale = Vector2(0.09578455, 0.84747875)
+
+[node name="Block13" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(387.00003, -558)
+rotation = -0.2617994
+scale = Vector2(-0.10464033, -1.5898322)
+
+[node name="Block7" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(153, -492)
+scale = Vector2(0.7600007, 1.2400012)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(543, -758)
+rotation = -0.18516125
+scale = Vector2(0.1801179, 1.0753723)
+
+[node name="Block14" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(603, -764)
+rotation = 0.26843405
+scale = Vector2(0.1801179, 1.2400012)
+
+[node name="Block16" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(850, -460)
+rotation = 4.712389
+scale = Vector2(0.5061942, 1.2583424)
+
+[node name="Block9" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(160, -1034)
+rotation = 3.1415927
+scale = Vector2(0.7600007, 1.2400012)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(528, -1032)
+rotation = 3.1415927
+scale = Vector2(1.3872278, 1.2400012)
+
+[node name="Block8" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(797, -342)
+scale = Vector2(3.2799995, 0.12000227)
+
+[node name="Block5" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(-438.00003, 116)
+scale = Vector2(11.879999, 2)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(-484.00003, -1129)
+scale = Vector2(1.0975252, 1.3770572)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(33.99991, -1125.0001)
+scale = Vector2(1.0975252, 1.3770572)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(569, -1131.0001)
+scale = Vector2(1.0975252, 1.3770572)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("3_ky6qs")]
+position = Vector2(-836, -570)
+rotation = 1.5708
+scale = Vector2(3, 2)
+
+[node name="PressurePad" parent="." instance=ExtResource("4_ky6qs")]
+position = Vector2(-132, -162)
+scale = Vector2(49.920002, 2)
+
+[node name="Door" parent="." instance=ExtResource("5_lwb38")]
+position = Vector2(66.000015, -731)
+scale = Vector2(2.4066434, 1.6400006)
+
+[node name="Bodies" type="Node2D" parent="."]
+
+[node name="Body(Basic)" parent="Bodies" instance=ExtResource("4_lwb38")]
+position = Vector2(-402, -702)
+
+[node name="Body(Basic)2" parent="Bodies" instance=ExtResource("4_lwb38")]
+position = Vector2(-11, -702)
+
+[node name="Body(Basic)3" parent="Bodies" instance=ExtResource("4_lwb38")]
+position = Vector2(534, -401)
+
+[node name="Body(Basic)4" parent="Bodies" instance=ExtResource("4_lwb38")]
+position = Vector2(710, -629)
+
+[connection signal="Pressed" from="PressurePad" to="Door" method="Open"]
+[connection signal="Unpressed" from="PressurePad" to="Door" method="Close"]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://db1o5k76tymy7"]
+
+[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_rp5ft"]
+[ext_resource type="PackedScene" uid="uid://bddjdhdyavhtq" path="res://Components/Head/head.tscn" id="2_qeqk5"]
+[ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="3_1soli"]
+[ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://Components/Bodys/body(basic).tscn" id="5_lmqi1"]
+
+[node name="Level_T" type="Node"]
+
+[node name="MainCamera" parent="." instance=ExtResource("1_rp5ft")]
+position = Vector2(-192, -572)
+
+[node name="Head" parent="." instance=ExtResource("2_qeqk5")]
+position = Vector2(-12, -451)
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block1" parent="Blocks" instance=ExtResource("3_1soli")]
+position = Vector2(172, 127)
+scale = Vector2(3, 2)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("3_1soli")]
+position = Vector2(-836, -570)
+rotation = 1.5708
+scale = Vector2(3, 2)
+
+[node name="Bodies" type="Node2D" parent="."]
+
+[node name="Body(Basic)" parent="Bodies" instance=ExtResource("5_lmqi1")]
+position = Vector2(-54, -184)

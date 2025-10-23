@@ -68,7 +68,7 @@ position = Vector2(1182, -68)
 
 [node name="EndZone" parent="." instance=ExtResource("6_upgg8")]
 position = Vector2(1655, 334)
-NextLevel = "res://Components/EndScene/end_screen.tscn"
+NextLevel = "res://Levels/level_1.tscn"
 
 [node name="Switch" parent="." instance=ExtResource("7_tqcie")]
 position = Vector2(339, 476)

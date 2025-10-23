@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://4xtj1pb84h2p"]
+[gd_scene load_steps=11 format=3 uid="uid://4xtj1pb84h2p"]
 
 [ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_3ten1"]
 [ext_resource type="PackedScene" uid="uid://bddjdhdyavhtq" path="res://Components/Head/head.tscn" id="2_lgndu"]
 [ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="3_yttsi"]
 [ext_resource type="PackedScene" uid="uid://c7dgl4dli5vue" path="res://Components/Block/block_3.tscn" id="4_ivsm0"]
 [ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://Components/Bodys/body(basic).tscn" id="5_lgndu"]
+[ext_resource type="PackedScene" uid="uid://dshq5wpgg711i" path="res://Components/Door/door.tscn" id="6_ivsm0"]
+[ext_resource type="PackedScene" uid="uid://da3bscst3fwvx" path="res://Components/Switch/Switch.tscn" id="7_hawto"]
+[ext_resource type="PackedScene" uid="uid://brlcfypgfr5lr" path="res://Components/PressurePad/pressure_pad.tscn" id="8_hawto"]
+[ext_resource type="PackedScene" uid="uid://djdopxl8rdnka" path="res://Components/Portal/portal.tscn" id="9_cvl0e"]
+[ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="10_k1vkr"]
 
 [node name="Level_T" type="Node"]
 
@@ -12,20 +17,26 @@
 position = Vector2(-192, -572)
 
 [node name="Head" parent="." instance=ExtResource("2_lgndu")]
-position = Vector2(-266, -2836)
+position = Vector2(-244, -2657)
 
 [node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block25" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(2754, 218)
+rotation = -1.570803
+scale = Vector2(0.6828985, 3.8915513)
 
 [node name="Block1" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(172, 127)
 scale = Vector2(3, 2)
 
+[node name="Block26" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3387.0002, 222)
+rotation = -4.7123823
+scale = Vector2(0.6828985, 2.1315463)
+
 [node name="Block9" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(1661, 120)
-scale = Vector2(3, 2)
-
-[node name="Block10" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(1092, -918)
 scale = Vector2(3, 2)
 
 [node name="Block6" parent="Blocks" instance=ExtResource("3_yttsi")]
@@ -43,9 +54,154 @@ position = Vector2(406, -2316)
 rotation = 1.5708
 scale = Vector2(6, 4)
 
+[node name="Block20" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(2255, -462)
+rotation = -1.570803
+scale = Vector2(0.6828985, 0.9715515)
+
+[node name="Block21" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(2751.9998, 15.000092)
+rotation = -1.570803
+scale = Vector2(0.6828985, 0.9715515)
+
+[node name="Block36" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3897, 167)
+rotation = -1.570803
+scale = Vector2(0.7554545, -2.8284788)
+
+[node name="Block37" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(5281, 136.00002)
+rotation = -4.711736
+scale = Vector2(0.7554545, -2.8284788)
+
+[node name="Block38" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(5286.0005, -191.99995)
+rotation = -4.711736
+scale = Vector2(0.7554545, -2.8284788)
+
+[node name="Block40" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(6859, -861.99994)
+rotation = -1.5707941
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block41" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(6853, -357)
+rotation = -1.5707941
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block43" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(7718.0005, -350.99997)
+rotation = -1.5707941
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block48" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(6851.0005, -1346)
+rotation = 1.570803
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block47" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(7716, -1346)
+rotation = 1.570803
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block44" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(8585, -349)
+rotation = -1.5707941
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block45" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(8579.001, -813)
+rotation = -4.7123823
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block46" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(8587.001, -1331)
+rotation = -4.7123823
+scale = Vector2(1.0476785, -3.3749702)
+
+[node name="Block39" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(4716, -237)
+rotation = -4.711736
+scale = Vector2(0.7554545, -2.8284788)
+
+[node name="Block24" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3126, 14.999999)
+rotation = -1.570803
+scale = Vector2(0.6828985, 0.9715515)
+
+[node name="Block27" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3541.9998, 19)
+rotation = -1.570803
+scale = Vector2(0.6828985, 0.9715515)
+
+[node name="Block28" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3603, -178.00003)
+rotation = -1.570803
+scale = Vector2(0.6828985, 0.5315564)
+
+[node name="Block22" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(2506, -648.0001)
+rotation = -1.570803
+scale = Vector2(0.68333405, 5.126343)
+
+[node name="Block42" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(4875, -712.9999)
+rotation = -1.570803
+scale = Vector2(1.7228961, 2.8515513)
+
+[node name="Block19" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(2126, -291.99997)
+rotation = -1.570803
+scale = Vector2(-0.03710272, 1.2915515)
+
+[node name="Block18" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(2082.0002, -599)
+rotation = -1.570803
+scale = Vector2(0.60289854, 2.0915563)
+
 [node name="Block2" parent="Blocks" instance=ExtResource("4_ivsm0")]
 position = Vector2(-98, -727)
 rotation = -0.45849
+
+[node name="Block32" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3968.0005, -137.99998)
+rotation = -1.570803
+scale = Vector2(0.6828985, 2.2515416)
+
+[node name="Block35" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(4558, 348.99997)
+rotation = -1.570803
+scale = Vector2(0.16195966, 3.6353185)
+
+[node name="Block33" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(4120.0005, -463.99994)
+rotation = -1.5047023
+scale = Vector2(0.68293196, 1.2536385)
+
+[node name="Block34" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(4438.0005, -417.99994)
+rotation = -1.5047023
+scale = Vector2(0.68293196, 0.7374179)
+
+[node name="Block23" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3371, -470.99997)
+rotation = -1.570803
+scale = Vector2(0.6828985, 2.8515513)
+
+[node name="Block29" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(3310, -982)
+rotation = -1.570803
+scale = Vector2(0.6828985, 2.8515513)
+
+[node name="Block30" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(4037.0002, -983.9999)
+rotation = -1.570803
+scale = Vector2(0.6828985, 2.8515513)
+
+[node name="Block31" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(4753, -975.99994)
+rotation = -1.570803
+scale = Vector2(0.6828985, 2.8515513)
 
 [node name="Block5" parent="Blocks" instance=ExtResource("4_ivsm0")]
 position = Vector2(-378, -364)
@@ -54,16 +210,79 @@ rotation = -2.6401
 [node name="Block7" parent="Blocks" instance=ExtResource("3_yttsi")]
 position = Vector2(-396, -129)
 
+[node name="Block12" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1574, -343.00003)
+rotation = 1.5707941
+scale = Vector2(-0.04000368, 1)
+
 [node name="Block8" parent="Blocks" instance=ExtResource("3_yttsi")]
-position = Vector2(962, -179)
+position = Vector2(729, -188)
+scale = Vector2(0.39999753, 0.72000027)
+
+[node name="Block16" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1016, -150)
+scale = Vector2(0.3999951, 1)
+
+[node name="Block17" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(907.99994, -9)
+scale = Vector2(1.4799976, 1)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1465, -251)
+scale = Vector2(0.11999756, 1.4399998)
+
+[node name="Block13" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1811, -566)
+rotation = 3.1415882
+scale = Vector2(0.075773485, 2.2685483)
+
+[node name="Block14" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1687.0001, -418.00006)
+rotation = 4.7123823
+scale = Vector2(0.08289851, 0.9315563)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("3_yttsi")]
+position = Vector2(1092, -918)
+scale = Vector2(3, 2)
 
 [node name="Bodies" type="Node2D" parent="."]
 
 [node name="Body(Basic)" parent="Bodies" instance=ExtResource("5_lgndu")]
-position = Vector2(-27, -195)
+position = Vector2(-54, -184)
 
 [node name="Body(Basic)2" parent="Bodies" instance=ExtResource("5_lgndu")]
 position = Vector2(1309, -204)
+
+[node name="Body(Basic)3" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(1577, -202)
+
+[node name="Body(Basic)5" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(2663, -206)
+
+[node name="Body(Basic)6" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(3083, -200)
+
+[node name="Body(Basic)7" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(3408, -690)
+
+[node name="Body(Basic)8" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(7491, -679)
+
+[node name="Body(Basic)4" parent="Bodies" instance=ExtResource("5_lgndu")]
+position = Vector2(1990, -346)
+
+[node name="Door" parent="." instance=ExtResource("6_ivsm0")]
+position = Vector2(2152, -208)
+
+[node name="Door2" parent="." instance=ExtResource("6_ivsm0")]
+position = Vector2(3016, -225)
+
+[node name="Door3" parent="." instance=ExtResource("6_ivsm0")]
+position = Vector2(4362, -692)
+scale = Vector2(1, 1.48)
+
+[node name="Switch" parent="." instance=ExtResource("7_hawto")]
+position = Vector2(2080, -329)
 
 [node name="Text" type="Node2D" parent="."]
 
@@ -72,24 +291,149 @@ offset_left = -120.0
 offset_top = -94.0
 offset_right = 347.0
 offset_bottom = -45.0
-theme_override_colors/font_color = Color(1, 0.596078, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-text = "A & D to move left and right"
+text = "Use A & D or Left & Right to move
+left or right."
+
+[node name="Label4" type="Label" parent="Text"]
+offset_left = 617.0
+offset_top = -101.0
+offset_right = 1139.0
+offset_bottom = -52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Stuck? Press R to restart
+the level."
+
+[node name="Label8" type="Label" parent="Text"]
+offset_left = 4442.0
+offset_top = -161.0
+offset_right = 4964.0
+offset_bottom = -60.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "That's okay. Let's try that again.
+Press R to restart the level."
+
+[node name="Label5" type="Label" parent="Text"]
+offset_left = 1823.0
+offset_top = -651.0
+offset_right = 2345.0
+offset_bottom = -394.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "While your head is
+attached to your body and
+ is on top of a switch, press
+ E to use them to open doors."
 
 [node name="Label2" type="Label" parent="Text"]
 offset_left = 621.0
 offset_top = -762.0
 offset_right = 1088.0
 offset_bottom = -713.0
-theme_override_colors/font_color = Color(1, 0.596078, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-text = "Space or LMB to throw your Head"
+text = "Space or LMB (Left Click) to throw your Head."
 
 [node name="Label3" type="Label" parent="Text"]
-offset_left = 1529.0
-offset_top = -103.0
-offset_right = 2096.0
-offset_bottom = -54.0
-theme_override_colors/font_color = Color(1, 0.596078, 0, 1)
+offset_left = 1504.0
+offset_top = -109.0
+offset_right = 2122.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-text = "You also move when your just a head"
+text = "You can also move using the same 
+movement keys (A & D) when you're 
+just a Head.
+"
+
+[node name="Label9" type="Label" parent="Text"]
+offset_left = 7392.0
+offset_top = -577.0
+offset_right = 8010.0
+offset_bottom = -372.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Congrats! You finished the tutorial! Shoot
+your head at the flag to keep on going.
+"
+
+[node name="Label6" type="Label" parent="Text"]
+offset_left = 2376.0
+offset_top = -642.0
+offset_right = 2994.0
+offset_bottom = -437.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "While your body is on top of a
+pressure pad, a door will stay open
+ until your body moves off of it.
+"
+
+[node name="Label10" type="Label" parent="Text"]
+offset_left = 3063.0
+offset_top = -1028.0
+offset_right = 3772.0
+offset_bottom = -823.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "If you move your body left or right
+and shoot at the same time, your
+body will keep on moving in that 
+direction until it hits a wall. Try it!"
+
+[node name="Label7" type="Label" parent="Text"]
+offset_left = 3048.0
+offset_top = -458.0
+offset_right = 3666.0
+offset_bottom = -253.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Shoot your head to teleport through
+portals that link different parts
+of the level together."
+
+[node name="PressurePad" parent="." instance=ExtResource("8_hawto")]
+position = Vector2(2823, -165)
+
+[node name="PressurePad2" parent="." instance=ExtResource("8_hawto")]
+position = Vector2(3900, -313)
+
+[node name="Portal" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
+position = Vector2(3446, -199.00005)
+rotation = 3.1415875
+scale = Vector2(0.512347, 0.8526969)
+connectedPortal = NodePath("../Portal2")
+
+[node name="Portal2" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
+position = Vector2(3235, -691)
+rotation = 3.1415875
+scale = Vector2(0.512347, 0.8526969)
+connectedPortal = NodePath("../Portal")
+
+[node name="Portal4" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
+position = Vector2(4402.0005, -621)
+rotation = 3.1415875
+scale = Vector2(0.512347, 0.8526969)
+connectedPortal = NodePath("../Portal5")
+
+[node name="EndZone" parent="." instance=ExtResource("10_k1vkr")]
+position = Vector2(7699, -630.9999)
+rotation = -1.255147e-05
+scale = Vector2(0.79234695, 0.8526969)
+NextLevel = "res://Levels/test.tscn"
+
+[node name="Portal5" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_cvl0e")]
+position = Vector2(7388, -678.99994)
+rotation = 3.1415875
+scale = Vector2(0.512347, 0.8526969)
+connectedPortal = NodePath("../Portal4")
+
+[connection signal="switchedOff" from="Switch" to="Door" method="Close"]
+[connection signal="switchedOn" from="Switch" to="Door" method="Open"]
+[connection signal="Pressed" from="PressurePad" to="Door2" method="Open"]
+[connection signal="Unpressed" from="PressurePad" to="Door2" method="Close"]
+[connection signal="Pressed" from="PressurePad2" to="Door3" method="Open"]
+[connection signal="Unpressed" from="PressurePad2" to="Door3" method="Close"]
