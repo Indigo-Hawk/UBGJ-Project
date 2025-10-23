@@ -13,7 +13,10 @@ config_version=5
 config/name="Use Your Head"
 run/main_scene="uid://bhyiet2epxdbu"
 config/features=PackedStringArray("4.4", "GL Compatibility")
+boot_splash/bg_color=Color(0.164904, 0.121073, 0.182549, 1)
+boot_splash/image="uid://b6ju4ewli6qu4"
 config/icon="uid://crwxreqablf0h"
+boot_splash/minimum_display_time=60
 
 [autoload]
 
