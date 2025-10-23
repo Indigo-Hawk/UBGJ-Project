@@ -11,16 +11,24 @@ x	Doors
 x	PressurePads
 x	Switch
 x	Better KeyMapping
-	Portals
+x	Portals
 	
+LEVELS:
+	intro head and body
+		body throw strength
+	intro pressure plates
+	intro switches
+	intro portals
+
+
 Art TODO:
-	Title Screen Title
+x	Title Screen Title
 	Body animation
-	Head
+x	Head
 	Large Blockout walls/Floars
-	Exit Area
+x	Exit Area
 	
 Settings:
 	list controls
-	volume
-	toggle moving background
+x	volume
+x	toggle moving background

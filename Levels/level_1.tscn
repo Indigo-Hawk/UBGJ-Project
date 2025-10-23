@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://cn87iittehpvd"]
+
+[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_rf6l5"]
+[ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="2_syshm"]
+[ext_resource type="PackedScene" uid="uid://dlvg7r4ur7707" path="res://Components/Block/block_2.tscn" id="3_rfktq"]
+[ext_resource type="PackedScene" uid="uid://bddjdhdyavhtq" path="res://Components/Head/head.tscn" id="4_0urlm"]
+[ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="4_syshm"]
+
+[node name="Level1" type="Node"]
+
+[node name="MainCamera" parent="." instance=ExtResource("1_rf6l5")]
+position = Vector2(266, 346)
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block3" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(804, 386)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-616, 395)
+
+[node name="Block5" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(806, 642)
+
+[node name="Block12" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(810, 901)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-614, 651)
+
+[node name="Block7" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(818, 1165)
+
+[node name="Block8" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-612, 911)
+
+[node name="Block9" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-579, 1168)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-88, 1166)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(386, 1168)
+
+[node name="Block1" parent="Blocks" instance=ExtResource("3_rfktq")]
+position = Vector2(81, 512)
+
+[node name="EndZone" parent="Blocks" instance=ExtResource("4_syshm")]
+position = Vector2(85, 1018)
+
+[node name="Head" parent="." instance=ExtResource("4_0urlm")]
+position = Vector2(76, 327)

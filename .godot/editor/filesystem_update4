@@ -23,3 +23,4 @@ res://Components/PressurePad/pressure_pad.tscn
 res://Components/PressurePad/pressure_pad.gd
 res://Components/Portal/portal.tscn
 res://Components/Portal/portal.gd
+res://Levels/level_1.tscn
