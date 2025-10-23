@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cn87iittehpvd"]
+[gd_scene load_steps=11 format=3 uid="uid://cn87iittehpvd"]
 
 [ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_rf6l5"]
 [ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="2_syshm"]
 [ext_resource type="PackedScene" uid="uid://dlvg7r4ur7707" path="res://Components/Block/block_2.tscn" id="3_rfktq"]
 [ext_resource type="PackedScene" uid="uid://bddjdhdyavhtq" path="res://Components/Head/head.tscn" id="4_0urlm"]
 [ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="4_syshm"]
+[ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://Components/Bodys/body(basic).tscn" id="6_rfktq"]
+[ext_resource type="PackedScene" uid="uid://brlcfypgfr5lr" path="res://Components/PressurePad/pressure_pad.tscn" id="7_0urlm"]
+[ext_resource type="PackedScene" uid="uid://dshq5wpgg711i" path="res://Components/Door/door.tscn" id="8_77x7w"]
+[ext_resource type="PackedScene" uid="uid://djdopxl8rdnka" path="res://Components/Portal/portal.tscn" id="9_xoyoh"]
+[ext_resource type="PackedScene" uid="uid://da3bscst3fwvx" path="res://Components/Switch/Switch.tscn" id="10_f4pg2"]
 
 [node name="Level1" type="Node"]
 
@@ -13,14 +18,91 @@ position = Vector2(266, 346)
 
 [node name="Blocks" type="Node2D" parent="."]
 
+[node name="Block28" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(160, 949)
+rotation = 3.1415927
+scale = Vector2(0.040002912, -0.79999995)
+
+[node name="Block24" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-236.00002, 634)
+rotation = 1.5707985
+scale = Vector2(0.040002912, -1.134062)
+
+[node name="Block29" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(351, 788.99994)
+rotation = -3.1415927
+scale = Vector2(0.04000291, -0.35999745)
+
+[node name="Block20" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(298, 829)
+rotation = 1.5707941
+scale = Vector2(0.11999816, 2.0400038)
+
+[node name="Block19" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(46.000004, 720)
+scale = Vector2(0.11999816, 1)
+
+[node name="Block25" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(14.0000305, 866)
+rotation = -2.5328822
+scale = Vector2(0.052547127, -0.6816601)
+
+[node name="Block22" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-52, 759.00006)
+scale = Vector2(-0.040002912, 0.56)
+
+[node name="Block26" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-126.00001, 939.00006)
+scale = Vector2(-0.040002912, 0.79999995)
+
+[node name="Block27" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-39.000008, 1090)
+scale = Vector2(-0.040002912, 0.79999995)
+
+[node name="Block23" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-68.000015, 667)
+rotation = -0.49084362
+scale = Vector2(-0.040002912, 0.33406126)
+
+[node name="Block21" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(452.99997, 540)
+rotation = 0.90902215
+scale = Vector2(-0.06960415, 1.3111029)
+
+[node name="Block16" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-243.00002, 159.99997)
+rotation = 1.5314339
+scale = Vector2(0.39141166, -3.0239692)
+
+[node name="Block5" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-364, 508)
+scale = Vector2(1.4800001, 0.27999997)
+
+[node name="Block13" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(806, 642)
+
+[node name="Block17" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(-215, 830.99994)
+scale = Vector2(0.6963235, 0.12000364)
+
 [node name="Block3" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(804, 386)
 
+[node name="Block18" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(189.99998, 434.99997)
+rotation = -0.8276243
+scale = Vector2(0.54614204, 0.15015136)
+
+[node name="Block14" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(156, 426)
+scale = Vector2(0.10496897, 0.6060422)
+
+[node name="Block15" parent="Blocks" instance=ExtResource("2_syshm")]
+position = Vector2(155, 153)
+scale = Vector2(0.10496897, 0.6060422)
+
 [node name="Block4" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(-616, 395)
-
-[node name="Block5" parent="Blocks" instance=ExtResource("2_syshm")]
-position = Vector2(806, 642)
 
 [node name="Block12" parent="Blocks" instance=ExtResource("2_syshm")]
 position = Vector2(810, 901)
@@ -50,4 +132,54 @@ position = Vector2(81, 512)
 position = Vector2(85, 1018)
 
 [node name="Head" parent="." instance=ExtResource("4_0urlm")]
-position = Vector2(76, 327)
+position = Vector2(77, 290)
+
+[node name="Body(Basic)" parent="." instance=ExtResource("6_rfktq")]
+position = Vector2(76, 355)
+LauncherStrength = 1200.0
+
+[node name="Body(Basic)2" parent="." instance=ExtResource("6_rfktq")]
+position = Vector2(-92, 768)
+LauncherStrength = 1200.0
+
+[node name="Body(Basic)4" parent="." instance=ExtResource("6_rfktq")]
+position = Vector2(-85, 990)
+LauncherStrength = 1200.0
+
+[node name="Body(Basic)3" parent="." instance=ExtResource("6_rfktq")]
+position = Vector2(242, 756)
+LauncherStrength = 1200.0
+
+[node name="PressurePad" parent="." instance=ExtResource("7_0urlm")]
+position = Vector2(-302, 468)
+
+[node name="Door" parent="." instance=ExtResource("8_77x7w")]
+position = Vector2(167, 305)
+
+[node name="Door2" parent="." instance=ExtResource("8_77x7w")]
+position = Vector2(325, 721)
+
+[node name="Portal" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_xoyoh")]
+position = Vector2(509, 335)
+connectedPortal = NodePath("../Portal2")
+
+[node name="Portal2" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_xoyoh")]
+position = Vector2(-319, 754)
+connectedPortal = NodePath("../Portal")
+
+[node name="Portal4" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_xoyoh")]
+position = Vector2(418, 743)
+connectedPortal = NodePath("../Portal3")
+
+[node name="Portal3" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("9_xoyoh")]
+position = Vector2(-337, 582)
+scale = Vector2(0.46949944, -0.643129)
+connectedPortal = NodePath("../Portal4")
+
+[node name="Switch" parent="." instance=ExtResource("10_f4pg2")]
+position = Vector2(115, 794)
+
+[connection signal="Pressed" from="PressurePad" to="Door" method="Open"]
+[connection signal="Unpressed" from="PressurePad" to="Door" method="Close"]
+[connection signal="switchedOff" from="Switch" to="Door2" method="Close"]
+[connection signal="switchedOn" from="Switch" to="Door2" method="Open"]
