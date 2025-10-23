@@ -32,6 +32,7 @@ func _on_h_slider_value_changed(value: float) -> void:
 func _on_check_button_toggled(toggled_on: bool) -> void:
 	if toggled_on:
 		Globals.MovingBackground = true
+		get_tree().call_group("Camera","playBackground")
 	else:
 		Globals.MovingBackground = false
 		get_tree().call_group("Camera","stopBackground")
