@@ -16,3 +16,6 @@ func _process(delta: float) -> void:
 
 func stopBackground():
 	$Grid/AnimationPlayer.pause()
+	
+func playBackground():
+	$Grid/AnimationPlayer.play("Move")
