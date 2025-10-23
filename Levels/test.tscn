@@ -15,6 +15,10 @@
 [node name="Block1" parent="Blocks" instance=ExtResource("1_mkyii")]
 position = Vector2(421, 649)
 
+[node name="Block12" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(1793.9999, 141)
+rotation = 1.2545161
+
 [node name="Block2" parent="Blocks" instance=ExtResource("1_mkyii")]
 position = Vector2(-43, 387)
 
@@ -29,6 +33,10 @@ position = Vector2(130, -129)
 
 [node name="Block6" parent="Blocks" instance=ExtResource("1_mkyii")]
 position = Vector2(1224, 69)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("1_mkyii")]
+position = Vector2(1675, 104.99997)
+rotation = 0.261799
 
 [node name="Block8" parent="Blocks" instance=ExtResource("1_mkyii")]
 position = Vector2(1625, -183)
@@ -66,12 +74,12 @@ position = Vector2(1471, 284)
 [node name="PressurePad" parent="." instance=ExtResource("5_bwca4")]
 position = Vector2(1182, -68)
 
+[node name="Switch" parent="." instance=ExtResource("7_tqcie")]
+position = Vector2(331, 476)
+
 [node name="EndZone" parent="." instance=ExtResource("6_upgg8")]
 position = Vector2(1655, 334)
-NextLevel = "res://Levels/level_1.tscn"
-
-[node name="Switch" parent="." instance=ExtResource("7_tqcie")]
-position = Vector2(339, 476)
+NextLevel = "res://Levels/level_3.tscn"
 
 [connection signal="Pressed" from="PressurePad" to="Door" method="Open"]
 [connection signal="Unpressed" from="PressurePad" to="Door" method="Close"]

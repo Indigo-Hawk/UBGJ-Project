@@ -1,0 +1,223 @@
+[gd_scene load_steps=9 format=3 uid="uid://cyr8jb50c7w2n"]
+
+[ext_resource type="PackedScene" uid="uid://cr0xdlvoi8kvu" path="res://Components/Camera/main_camera.tscn" id="1_t60mx"]
+[ext_resource type="PackedScene" uid="uid://bddjdhdyavhtq" path="res://Components/Head/head.tscn" id="2_ujo87"]
+[ext_resource type="PackedScene" uid="uid://c135b0kbl8oaj" path="res://Components/Block/block_1.tscn" id="3_hvgxt"]
+[ext_resource type="PackedScene" uid="uid://71x2sq1tvg6k" path="res://Components/EndZone/end_zone.tscn" id="4_fqog2"]
+[ext_resource type="PackedScene" uid="uid://dlq5lyppjqcgx" path="res://Components/Bodys/body(basic).tscn" id="4_waaef"]
+[ext_resource type="PackedScene" uid="uid://brlcfypgfr5lr" path="res://Components/PressurePad/pressure_pad.tscn" id="6_ben3k"]
+[ext_resource type="PackedScene" uid="uid://djdopxl8rdnka" path="res://Components/Portal/portal.tscn" id="7_77xid"]
+[ext_resource type="PackedScene" uid="uid://dshq5wpgg711i" path="res://Components/Door/door.tscn" id="8_m0m22"]
+
+[node name="Level_T" type="Node"]
+
+[node name="MainCamera" parent="." instance=ExtResource("1_t60mx")]
+position = Vector2(-192, -572)
+
+[node name="Head" parent="." instance=ExtResource("2_ujo87")]
+position = Vector2(-197, -250)
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block15" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(662, -598)
+scale = Vector2(1.1941535, 1.0857718)
+
+[node name="Block16" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(892, -436)
+scale = Vector2(1.1653788, 0.90574735)
+
+[node name="Block14" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(27, -896.99994)
+rotation = -3.1415925
+scale = Vector2(0.5773353, 0.6727942)
+
+[node name="Block12" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(25.999992, -960.00006)
+rotation = 3.1415927
+scale = Vector2(0.57733506, 0.27279297)
+
+[node name="Block13" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(-131.00005, -812)
+rotation = 2.624527
+scale = Vector2(1.1773368, 0.15279296)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(-360.00003, -359)
+scale = Vector2(1.6373, 0.21320379)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(-4, -167)
+scale = Vector2(0.51730055, 2)
+
+[node name="Block5" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(234, -340)
+scale = Vector2(1.2373011, 0.20000005)
+
+[node name="Block9" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(489, -706)
+scale = Vector2(1.5173023, 0.20000005)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(142, -924)
+scale = Vector2(0.11158256, 0.845098)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(-594.99994, -956)
+scale = Vector2(-1.4403049, -0.2501154)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(371, -125)
+scale = Vector2(0.19730192, 0.71999824)
+
+[node name="Block1" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(109, 131)
+scale = Vector2(3, 2)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(105, -1401)
+scale = Vector2(3, 2)
+
+[node name="Block7" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(1077, -581)
+rotation = 1.5708
+scale = Vector2(4.24, 2)
+
+[node name="Block8" parent="Blocks" instance=ExtResource("3_hvgxt")]
+position = Vector2(-870, -622.00006)
+rotation = 1.5708
+scale = Vector2(4.3199997, 2)
+
+[node name="Block15" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(-211.99998, -618)
+rotation = 2.6454308
+scale = Vector2(0.500328, 0.15686046)
+
+[node name="Block18" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(-374, -434.99997)
+rotation = 3.1415927
+scale = Vector2(0.9608385, -0.5475948)
+
+[node name="Block19" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(-42.999973, -800)
+rotation = 2.455212
+scale = Vector2(-0.047585245, 0.66244036)
+
+[node name="Block20" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(123.99998, -542.00006)
+rotation = 2.0598798
+scale = Vector2(-0.047585245, 0.4437545)
+
+[node name="Block22" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(85.00002, -699)
+rotation = 0.91885364
+scale = Vector2(-0.047585245, 0.31268206)
+
+[node name="Block23" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(43.000023, -776)
+rotation = 0.91885364
+scale = Vector2(-0.047585245, 0.31268206)
+
+[node name="Block21" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(-73.000015, -657)
+rotation = 2.0511148
+scale = Vector2(-0.060361817, 0.472021)
+
+[node name="Block27" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(185.00002, -661)
+rotation = 2.0511148
+scale = Vector2(-0.060361817, 0.472021)
+
+[node name="Block28" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(268.00003, -591.99994)
+rotation = 2.659477
+scale = Vector2(-0.060361817, 0.472021)
+
+[node name="Block29" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(330.99997, -497)
+rotation = 2.4185164
+scale = Vector2(-0.060361817, 0.472021)
+
+[node name="Block30" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(420.99997, -444.99997)
+rotation = 1.7420919
+scale = Vector2(-0.060361817, 0.472021)
+
+[node name="Block26" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(83.00004, -560.00006)
+rotation = 1.9547639
+scale = Vector2(-0.060361817, 0.3426436)
+
+[node name="Block25" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(19.000002, -469.00003)
+rotation = 1.5707964
+scale = Vector2(-0.060361817, 0.472021)
+
+[node name="Block24" parent="." instance=ExtResource("3_hvgxt")]
+position = Vector2(133.99997, -467)
+rotation = 3.1415927
+scale = Vector2(0.23165597, 0.28552034)
+
+[node name="EndZone" parent="." instance=ExtResource("4_fqog2")]
+position = Vector2(177, -165)
+scale = Vector2(1.6965322, 1.3893203)
+NextLevel = "res://Levels/level_1.tscn"
+
+[node name="Bodies" type="Node2D" parent="."]
+
+[node name="Body(Basic)" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(-197, -176)
+
+[node name="Body(Basic)2" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(494, -790)
+
+[node name="Body(Basic)5" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(-395, -572)
+
+[node name="Body(Basic)7" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(-9, -541)
+
+[node name="Body(Basic)6" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(236, -454)
+
+[node name="Body(Basic)8" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(575, -166)
+
+[node name="Body(Basic)3" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(-385, -1035)
+
+[node name="Body(Basic)4" parent="Bodies" instance=ExtResource("4_waaef")]
+position = Vector2(46, -1047)
+
+[node name="PressurePad" parent="." instance=ExtResource("6_ben3k")]
+position = Vector2(-511, -999)
+scale = Vector2(1.799998, 2)
+
+[node name="PressurePad2" parent="." instance=ExtResource("6_ben3k")]
+position = Vector2(-22.00003, -447)
+scale = Vector2(1.799998, 2)
+
+[node name="Portal3" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("7_77xid")]
+position = Vector2(-548, -238.99997)
+scale = Vector2(0.86746734, 1.9817625)
+connectedPortal = NodePath("../Portal4")
+
+[node name="Portal4" parent="." node_paths=PackedStringArray("connectedPortal") instance=ExtResource("7_77xid")]
+position = Vector2(726, -840)
+scale = Vector2(0.86746734, 1.9817625)
+connectedPortal = NodePath("../Portal3")
+
+[node name="Door" parent="." instance=ExtResource("8_m0m22")]
+position = Vector2(465, -399)
+rotation = 1.5707964
+scale = Vector2(-2.6624362, 5.1057153)
+
+[node name="Door2" parent="." instance=ExtResource("8_m0m22")]
+position = Vector2(106.00001, -731.99994)
+rotation = 3.1415927
+scale = Vector2(-1.8874062, 3.7158952)
+
+[connection signal="Pressed" from="PressurePad" to="Door2" method="Open"]
+[connection signal="Unpressed" from="PressurePad" to="Door2" method="Close"]
+[connection signal="Pressed" from="PressurePad2" to="Door" method="Open"]
+[connection signal="Unpressed" from="PressurePad2" to="Door" method="Close"]

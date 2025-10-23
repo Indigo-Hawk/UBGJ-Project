@@ -128,7 +128,7 @@ position = Vector2(386, 1168)
 [node name="Block1" parent="Blocks" instance=ExtResource("3_rfktq")]
 position = Vector2(81, 512)
 
-[node name="EndZone" parent="Blocks" instance=ExtResource("4_syshm")]
+[node name="EndZone" parent="." instance=ExtResource("4_syshm")]
 position = Vector2(85, 1018)
 NextLevel = "res://Levels/level_2real.tscn"
 
