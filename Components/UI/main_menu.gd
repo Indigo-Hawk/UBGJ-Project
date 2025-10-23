@@ -15,7 +15,8 @@ func _on_button_2_button_up() -> void:
 
 
 func _on_credits_button_up() -> void:
-	pass # Replace with function body.
+	$Main.visible = false
+	$Credits.visible = true
 
 
 func _on_settings_button_up() -> void:
@@ -41,3 +42,4 @@ func _on_check_button_toggled(toggled_on: bool) -> void:
 func _on_settings_back_pressed() -> void:
 	$Main.visible = true
 	$Settings.visible = false
+	$Credits.visible = false

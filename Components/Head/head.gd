@@ -20,10 +20,9 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	$Control.rotation = -rotation
 	
 	if !isFree:
+		print("3")
 		return
 	
-	if Input.is_action_just_pressed("DOWN"):
-		teleportTo(Vector2.ZERO)
 	
 	var x = -Input.get_action_strength("LEFT") + Input.get_action_strength("RIGHT")
 	if x != 0:
@@ -38,7 +37,9 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	if abs(linear_velocity.length()) > 1:
 		$Timer.stop()
 		$Control/Label.visible = false
-		
+
+
+
 func teleportTo(POS:Vector2) -> void:
 	teleporting = true
 	teleportingPos = POS

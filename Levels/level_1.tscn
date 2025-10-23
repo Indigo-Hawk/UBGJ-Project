@@ -127,6 +127,7 @@ position = Vector2(386, 1168)
 
 [node name="Block1" parent="Blocks" instance=ExtResource("3_rfktq")]
 position = Vector2(81, 512)
+rotation = -0.347896
 
 [node name="EndZone" parent="Blocks" instance=ExtResource("4_syshm")]
 position = Vector2(85, 1018)
