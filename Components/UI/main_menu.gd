@@ -6,7 +6,7 @@ func _ready() -> void:
 
 
 func _on_button_button_up() -> void:
-			get_tree().call_deferred("change_scene_to_file","res://Levels/test.tscn")
+			get_tree().call_deferred("change_scene_to_file","res://Levels/level_t.tscn")
 			Globals.call_deferred("PlayMusic",1)
 			Globals.timer = 0
 			Globals.call_deferred("StartTimer")
