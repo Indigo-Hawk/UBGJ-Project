@@ -4,12 +4,18 @@ class_name Head
 @export var SPEED = 100.0
 
 var isFree = true
+
 var lastDelta:float= 0
+var wishDirection:Vector2 = Vector2.ZERO
+
 var teleporting:bool = false
 var teleportingPos:Vector2 = Vector2.ZERO
 
 func _physics_process(delta: float) -> void:
 	lastDelta = delta
+	
+	var x = -Input.get_action_strength("LEFT") + Input.get_action_strength("RIGHT")
+	wishDirection.x = x
 
 func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	
@@ -24,9 +30,8 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 		return
 	
 	
-	var x = -Input.get_action_strength("LEFT") + Input.get_action_strength("RIGHT")
-	if x != 0:
-		linear_velocity.x += x * SPEED * lastDelta
+	if wishDirection.x != 0:
+		linear_velocity.x += wishDirection.x * SPEED * lastDelta
 			
 	Globals.PlayerPos = global_position
 	

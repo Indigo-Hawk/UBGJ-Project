@@ -12,7 +12,7 @@
 position = Vector2(-192, -572)
 
 [node name="Head" parent="." instance=ExtResource("2_lgndu")]
-position = Vector2(-244, -2657)
+position = Vector2(-266, -2836)
 
 [node name="Blocks" type="Node2D" parent="."]
 
@@ -60,7 +60,7 @@ position = Vector2(962, -179)
 [node name="Bodies" type="Node2D" parent="."]
 
 [node name="Body(Basic)" parent="Bodies" instance=ExtResource("5_lgndu")]
-position = Vector2(-54, -184)
+position = Vector2(-27, -195)
 
 [node name="Body(Basic)2" parent="Bodies" instance=ExtResource("5_lgndu")]
 position = Vector2(1309, -204)

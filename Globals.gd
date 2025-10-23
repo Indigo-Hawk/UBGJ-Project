@@ -10,6 +10,8 @@ var PlayerPos:Vector2 = Vector2.ZERO
 
 var MovingBackground:bool = true
 
+var isTimerOn:bool = false
+var timer:int = 0
 
 
 func _ready() -> void:
@@ -22,6 +24,10 @@ func _input(event: InputEvent) -> void:
 		get_tree().reload_current_scene()
 		if head != null:
 			head.queue_free()
+
+func _physics_process(delta: float) -> void:
+	if isTimerOn:
+		timer += 1
 
 func changeScenes(FileName:String) ->void:
 	if not ResourceLoader.exists(FileName):
@@ -40,3 +46,6 @@ func _resetPos() -> void:
 
 func PlayMusic(index:int)->void:
 	_musicPlayer.PlayTrack(index)
+
+func StartTimer():
+	isTimerOn = true
