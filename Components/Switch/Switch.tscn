@@ -1,6 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://da3bscst3fwvx"]
+[gd_scene load_steps=7 format=3 uid="uid://da3bscst3fwvx"]
 
 [ext_resource type="Script" uid="uid://c4lsby04488ku" path="res://Components/Switch/switch.gd" id="1_pbq1u"]
+[ext_resource type="Texture2D" uid="uid://crwxreqablf0h" path="res://Art/head.png" id="2_phl02"]
+[ext_resource type="Texture2D" uid="uid://b4qe3lwd2iefx" path="res://Art/platforms.png" id="3_4u2j8"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_34gjf"]
+radius = 60.0
+height = 120.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r2g8h"]
 radius = 25.0
@@ -13,15 +19,39 @@ collision_layer = 8
 collision_mask = 0
 script = ExtResource("1_pbq1u")
 
+[node name="Head" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_phl02")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Head"]
+self_modulate = Color(1, 0.133333, 0.282353, 1)
+position = Vector2(110, 0)
+mesh = SubResource("SphereMesh_34gjf")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Head"]
+self_modulate = Color(0.490196, 1, 0.192157, 1)
+position = Vector2(-110, 10)
+mesh = SubResource("SphereMesh_34gjf")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("CircleShape2D_r2g8h")
 
 [node name="Node2D" type="Node2D" parent="."]
 rotation = 0.785398
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D"]
+visible = false
 position = Vector2(0, -20)
 mesh = SubResource("BoxMesh_xqcgd")
+
+[node name="Platforms" type="Sprite2D" parent="Node2D"]
+position = Vector2(2.38419e-06, -25.4558)
+rotation = -1.57079
+scale = Vector2(0.07, 0.1)
+texture = ExtResource("3_4u2j8")
+region_enabled = true
+region_rect = Rect2(534.487, 967.82, 855.487, 111.077)
 
 [node name="Label" type="Label" parent="."]
 offset_left = -5.0

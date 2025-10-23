@@ -18,3 +18,4 @@ res://Levels/level_t.tscn
 res://Components/Head/head.gd
 res://Globals.gd
 res://Components/UI/main_menu.gd
+res://Components/Switch/switch.gd
